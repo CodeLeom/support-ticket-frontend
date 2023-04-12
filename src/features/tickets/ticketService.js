@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = '/api/tickets/'
+const base_url = 'https://support-ticket-api-u44r.onrender.com'
+const API_URL = `${base_url}/api/tickets/`
 
 // create new ticket
 const createTicket = async (ticketData, token) => {
